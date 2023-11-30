@@ -1,0 +1,39 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.par-imagenes{
+    width: 24%;
+    position: relative;
+ 
+}
+.par-imagenes>button{
+    padding: 10px 15px;
+    border: none;
+    background: black;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+.oculto{
+    display: none;
+    
+}
+.visible, .oculto{
+    width: 100%;
+}
+.par-imagenes:hover .oculto{
+display: block;
+
+}
+.par-imagenes:hover .visible{
+    display: none;
+}
